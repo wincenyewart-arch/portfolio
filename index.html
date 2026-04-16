@@ -9,7 +9,7 @@
     
     <meta property="og:title" content="Winceny Ewart U. Ledesma | Agriculturist &amp; Soil Science Specialist">
     <meta property="og:description" content="Restoring soil vitality with vintage wisdom and modern science. Field-proven. Future-focused.">
-    <meta property="og:image" content="https://i.imgur.com/YOUR_PHOTO_HERE.jpg">
+    <meta property="og:image" content="./profile.jpg">
     <meta property="og:url" content="https://yourdomain.com">
     <meta property="og:type" content="profile">
     
@@ -112,6 +112,10 @@
             background: linear-gradient(to right, #8B4513, #D2B48C);
         }
         
+        html {
+            scroll-behavior: smooth;
+        }
+
         .soil-texture {
             background-image: 
                 linear-gradient(#D2B48C 1px, transparent 1px),
@@ -215,7 +219,7 @@
                     <a href="#experience" class="inline-flex items-center gap-3 border-2 border-white hover:bg-white/10 text-white font-medium px-9 py-5 rounded-none uppercase tracking-widest text-sm">
                         EXPLORE MY WORK <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="#" onclick="downloadResume()" class="inline-flex items-center gap-3 border-2 border-white hover:bg-white/10 text-white font-medium px-9 py-5 rounded-none uppercase tracking-widest text-sm">
+                    <a href="resume.pdf" download class="inline-flex items-center gap-3 border-2 border-white hover:bg-white/10 text-white font-medium px-9 py-5 rounded-none uppercase tracking-widest text-sm">
                         <i class="fas fa-download"></i> DOWNLOAD CV
                     </a>
                 </div>
@@ -224,7 +228,7 @@
             <div class="hidden md:flex justify-end">
                 <div class="relative">
                     <div class="vintage-card p-5 max-w-xs rotate-[-3deg]">
-                        <img src="https://i.imgur.com/YOUR_PHOTO_HERE.jpg" 
+                        <img src="./profile.jpg" 
                              alt="Winceny Ewart U. Ledesma – Professional Portrait"
                              class="w-full h-96 object-cover border-4 border-[#D2B48C] sepia-[0.1]">
                         <div class="text-center mt-4 text-[#8B4513] text-sm font-medium tracking-widest">WINCENY EWART U. LEDESMA • 2026</div>
@@ -233,10 +237,10 @@
             </div>
         </div>
         
-        <div class="absolute bottom-12 left-1/2 flex flex-col items-center text-white/70 text-xs tracking-[2px]">
+        <a href="#about" class="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-white/80 text-xs tracking-[2px] hover:text-white focus:outline-none" title="Scroll to discover the soil">
             <div class="mb-3">SCROLL TO DISCOVER THE SOIL</div>
             <i class="fas fa-chevron-down animate-bounce text-3xl"></i>
-        </div>
+        </a>
         
         <button onclick="scrollToTop()" id="back-to-top" 
                 class="hidden fixed bottom-8 right-8 bg-[#8B4513] hover:bg-[#D2B48C] text-white w-12 h-12 rounded-2xl shadow-2xl flex items-center justify-center text-2xl z-50">
@@ -261,7 +265,7 @@
             
             <div class="md:col-span-5">
                 <div class="vintage-card p-4">
-                    <img src="https://i.imgur.com/YOUR_PHOTO_HERE.jpg" 
+                    <img src="./profile.jpg" 
                          alt="Winceny Ewart U. Ledesma - Soil Science Specialist"
                          class="w-full aspect-square object-cover border-8 border-[#D2B48C]">
                 </div>
@@ -452,10 +456,6 @@
             e.preventDefault();
             alert("🌱 Message received! Thank you – I will reply shortly.");
             e.target.reset();
-        }
-        
-        function downloadResume() {
-            alert("📄 CV download started!");
         }
         
         function scrollToTop() {
