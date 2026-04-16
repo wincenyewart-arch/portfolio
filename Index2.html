@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Winceny Ewart U. Ledesma – Agriculturist Major in Soil Science | Expert in soil analysis, regenerative agriculture, soil mapping, and sustainable land management. VSU Cum Laude graduate with hands-on experience at BSWM, DOST, and VSU research projects.">
+    <meta name="keywords" content="soil science, agriculturist, soil analysis, regenerative agriculture, soil mapping, BSWM, DOST, VSU, Philippines, Kananga Leyte">
+    <meta name="author" content="Winceny Ewart U. Ledesma">
+    
+    <meta property="og:title" content="Winceny Ewart U. Ledesma | Agriculturist &amp; Soil Science Specialist">
+    <meta property="og:description" content="Restoring soil vitality with vintage wisdom and modern science. Field-proven. Future-focused.">
+    <meta property="og:image" content="https://i.imgur.com/YOUR_PHOTO_HERE.jpg">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:type" content="profile">
+    
+    <title>Winceny Ewart U. Ledesma | Agriculturist &amp; Soil Science Specialist</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Source+Serif+4:wght@400;600&amp;display=swap');
+        
+        :root {
+            --vintage-brown: #8B4513;
+            --vintage-tan: #D2B48C;
+            --vintage-cream: #F5F0E8;
+            --vintage-olive: #556B2F;
+        }
+        
+        * {
+            transition-property: color, background-color, border-color, transform, box-shadow, opacity;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 280ms;
+        }
+        
+        body {
+            font-family: 'Source Serif 4', serif;
+            background: linear-gradient(180deg, #F5F0E8 0%, #EDE4D4 100%);
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(139, 69, 19, 0.06) 0%, transparent 60%),
+                radial-gradient(circle at 75% 75%, rgba(85, 107, 47, 0.06) 0%, transparent 60%);
+        }
+        
+        .heading-font { font-family: 'Playfair Display', serif; }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(139, 69, 19, 0.68), rgba(139, 69, 19, 0.62)), 
+                              url('https://picsum.photos/id/1016/2000/1200');
+            background-size: cover;
+            background-position: center;
+            filter: sepia(0.15) contrast(1.05) brightness(1.05);
+        }
+        
+        .vintage-card {
+            border: 3px solid #D2B48C;
+            box-shadow: 12px 12px 0 -4px #8B4513,
+                        0 10px 15px -3px rgba(139, 69, 19, 0.15);
+            background: #F5F0E8;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .vintage-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(245, 240, 232, 0.45), transparent);
+            pointer-events: none;
+            opacity: 0.7;
+            z-index: 1;
+        }
+        
+        .vintage-card:hover {
+            transform: translateY(-8px) rotate(1deg);
+            box-shadow: 18px 18px 0 -4px #8B4513,
+                        0 25px 30px -5px rgba(139, 69, 19, 0.25);
+        }
+        
+        .nav-link {
+            position: relative;
+            padding-bottom: 4px;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2.5px;
+            bottom: 0;
+            left: 50%;
+            background-color: #D2B48C;
+        }
+        
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+            left: 0;
+        }
+        
+        .section-header {
+            position: relative;
+        }
+        
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 78px;
+            height: 3.5px;
+            background: linear-gradient(to right, #8B4513, #D2B48C);
+        }
+        
+        .soil-texture {
+            background-image: 
+                linear-gradient(#D2B48C 1px, transparent 1px),
+                linear-gradient(90deg, #D2B48C 1px, transparent 1px);
+            background-size: 52px 52px;
+            opacity: 0.05;
+        }
+        
+        .modern-vintage-button {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .modern-vintage-button::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 40%;
+            height: 300%;
+            background: linear-gradient(120deg, transparent, rgba(255,255,255,0.35), transparent);
+            transform: skewX(-25deg);
+            animation: shine 4s linear infinite;
+        }
+        
+        @keyframes shine { 100% { transform: translateX(280%); } }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        #back-to-top {
+            animation: fadeIn 0.4s;
+        }
+        
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body class="vintage-bg text-[#4A3728]">
+    <nav class="bg-[#8B4513] text-[#F5EDE3] sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-11 h-11 bg-[#D2B48C] rounded-2xl flex items-center justify-center border-2 border-[#F5EDE3] shadow-inner">
+                    <i class="fas fa-seedling text-[#8B4513] text-3xl"></i>
+                </div>
+                <div>
+                    <h1 class="heading-font text-2xl font-bold tracking-widest">WINCENY EWART U. LEDESMA</h1>
+                    <p class="text-xs tracking-[3px] text-[#D2B48C] -mt-1">AGRICULTURIST • SOIL SCIENCE</p>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-9 text-sm font-medium uppercase tracking-widest">
+                <a href="#home" class="nav-link" onclick="setActive(this)">Home</a>
+                <a href="#about" class="nav-link" onclick="setActive(this)">About</a>
+                <a href="#skills" class="nav-link" onclick="setActive(this)">Skills</a>
+                <a href="#experience" class="nav-link" onclick="setActive(this)">Experience</a>
+                <a href="#education" class="nav-link" onclick="setActive(this)">Education</a>
+                <a href="#contact" class="nav-link" onclick="setActive(this)">Contact</a>
+            </div>
+            
+            <button onclick="toggleMobileMenu()" class="md:hidden text-3xl focus:outline-none" aria-label="Toggle menu">
+                <i class="fas fa-bars" id="menu-icon"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-[#8B4513] px-6 py-6 border-t border-[#D2B48C]">
+            <div class="flex flex-col gap-5 text-sm font-medium uppercase tracking-widest">
+                <a href="#home" onclick="toggleMobileMenu()" class="py-3">Home</a>
+                <a href="#about" onclick="toggleMobileMenu()" class="py-3">About</a>
+                <a href="#skills" onclick="toggleMobileMenu()" class="py-3">Skills</a>
+                <a href="#experience" onclick="toggleMobileMenu()" class="py-3">Experience</a>
+                <a href="#education" onclick="toggleMobileMenu()" class="py-3">Education</a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="py-3">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-bg h-screen flex items-center text-white relative">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-7">
+                <div class="inline-flex items-center gap-3 bg-white/20 backdrop-blur-md px-7 py-3 rounded-3xl border border-white/30 text-sm tracking-widest font-medium">
+                    <i class="fas fa-leaf"></i>
+                    BRGY. LIM-AO, KANANGA, LEYTE • PHILIPPINES
+                </div>
+                
+                <h1 class="heading-font text-7xl md:text-8xl font-bold leading-none tracking-tighter">WINCENY EWART</h1>
+                <p class="text-5xl md:text-6xl font-light text-[#D2B48C] heading-font">Agriculturist<br>Major in Soil Science</p>
+                
+                <p class="max-w-md text-xl text-white/90">Restoring soil vitality with vintage wisdom and modern science. Field-proven. Future-focused.</p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="modern-vintage-button inline-flex items-center gap-3 bg-[#D2B48C] hover:bg-[#F5F0E8] text-[#8B4513] font-medium px-9 py-5 rounded-none uppercase tracking-widest text-sm border-2 border-[#8B4513] shadow-inner">
+                        <i class="fas fa-envelope"></i> LET’S CONNECT
+                    </a>
+                    <a href="#experience" class="inline-flex items-center gap-3 border-2 border-white hover:bg-white/10 text-white font-medium px-9 py-5 rounded-none uppercase tracking-widest text-sm">
+                        EXPLORE MY WORK <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#" onclick="downloadResume()" class="inline-flex items-center gap-3 border-2 border-white hover:bg-white/10 text-white font-medium px-9 py-5 rounded-none uppercase tracking-widest text-sm">
+                        <i class="fas fa-download"></i> DOWNLOAD CV
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex justify-end">
+                <div class="relative">
+                    <div class="vintage-card p-5 max-w-xs rotate-[-3deg]">
+                        <img src="https://i.imgur.com/YOUR_PHOTO_HERE.jpg" 
+                             alt="Winceny Ewart U. Ledesma – Professional Portrait"
+                             class="w-full h-96 object-cover border-4 border-[#D2B48C] sepia-[0.1]">
+                        <div class="text-center mt-4 text-[#8B4513] text-sm font-medium tracking-widest">WINCENY EWART U. LEDESMA • 2026</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-12 left-1/2 flex flex-col items-center text-white/70 text-xs tracking-[2px]">
+            <div class="mb-3">SCROLL TO DISCOVER THE SOIL</div>
+            <i class="fas fa-chevron-down animate-bounce text-3xl"></i>
+        </div>
+        
+        <button onclick="scrollToTop()" id="back-to-top" 
+                class="hidden fixed bottom-8 right-8 bg-[#8B4513] hover:bg-[#D2B48C] text-white w-12 h-12 rounded-2xl shadow-2xl flex items-center justify-center text-2xl z-50">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </header>
+
+    <section id="about" class="max-w-7xl mx-auto px-6 py-20 fade-in">
+        <div class="grid md:grid-cols-12 gap-16 items-center">
+            <div class="md:col-span-7">
+                <span class="uppercase text-sm tracking-[3px] text-[#556B2F] font-medium">MY MISSION</span>
+                <h2 class="section-header heading-font text-5xl font-bold mt-2 mb-8">Bridging Science & Sustainability</h2>
+                <div class="space-y-6 text-lg leading-relaxed">
+                    <p>
+                        I am a detail-oriented agriculturist specializing in <strong>Soil Science</strong>, with a strong foundation in technical analysis, fieldwork, and research. My work is driven by a deep commitment to restoring soil health and advancing sustainable agricultural practices.
+                    </p>
+                    <p>
+                        With hands-on experience and a data-driven mindset, I aim to bridge traditional farming knowledge with modern scientific approaches. I am particularly passionate about developing practical, evidence-based solutions that empower farmers, enhance productivity, and support the long-term resilience of agricultural systems.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="md:col-span-5">
+                <div class="vintage-card p-4">
+                    <img src="https://i.imgur.com/YOUR_PHOTO_HERE.jpg" 
+                         alt="Winceny Ewart U. Ledesma - Soil Science Specialist"
+                         class="w-full aspect-square object-cover border-8 border-[#D2B48C]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-[#EDE4D4] py-20 soil-texture fade-in">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="px-7 py-3 bg-[#8B4513] text-white text-sm font-medium tracking-widest rounded">MY SOIL TOOLKIT</span>
+                <h2 class="section-header heading-font text-5xl font-bold mt-4">Expertise Rooted in Science &amp; Tradition</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="vintage-card p-8">
+                    <h3 class="heading-font text-2xl font-semibold mb-4">Soil Science &amp; Field Work</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-[#8B4513] mt-0.5"></i> Soil profile characterization &amp; analysis</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-[#8B4513] mt-0.5"></i> Soil sampling &amp; laboratory testing</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-[#8B4513] mt-0.5"></i> Generation of Soil Health Cards</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-[#8B4513] mt-0.5"></i> Adaptive Balance Fertilization Strategy</li>
+                    </ul>
+                </div>
+                <div class="vintage-card p-8">
+                    <h3 class="heading-font text-2xl font-semibold mb-4">Technical &amp; Research</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-[#8B4513] mt-0.5"></i> Data collection, analysis &amp; interpretation</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-[#8B4513] mt-0.5"></i> Database &amp; project management</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-[#8B4513] mt-0.5"></i> MS Excel, Word, Google Sheets (advanced)</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-[#8B4513] mt-0.5"></i> Technical reports &amp; presentations</li>
+                    </ul>
+                </div>
+                <div class="vintage-card p-8">
+                    <h3 class="heading-font text-2xl font-semibold mb-4">Professional Strengths</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-[#8B4513] mt-0.5"></i> Strong attention to detail &amp; accuracy</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-[#8B4513] mt-0.5"></i> Excellent time &amp; project management</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-[#8B4513] mt-0.5"></i> Independent &amp; collaborative work</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-[#8B4513] mt-0.5"></i> English • Filipino • Bisaya</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="max-w-7xl mx-auto px-6 py-20 fade-in">
+        <h2 class="section-header heading-font text-5xl font-bold mb-12 text-center">Professional Experience</h2>
+        
+        <div class="space-y-16">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-56 text-sm font-medium text-[#8B4513]">Oct 21, 2024 – Present</div>
+                <div class="flex-1 vintage-card p-8">
+                    <h3 class="text-xl font-semibold">Project Technical Assistant I</h3>
+                    <p class="text-[#556B2F]">Department of Science and Technology (DOST) Region VIII</p>
+                    <ul class="mt-4 list-disc pl-5 space-y-2 text-[#4A3728]/90">
+                        <li>Managed and updated the CEST database with 99%+ accuracy</li>
+                        <li>Oversaw liquidation of overdue projects and utilized funds for S&T initiatives</li>
+                        <li>Prepared technical letters, memos, purchase requests, and project proposals</li>
+                        <li>Facilitated quarterly presentations highlighting project performance</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-56 text-sm font-medium text-[#8B4513]">Aug 1 – Oct 15, 2024</div>
+                <div class="flex-1 vintage-card p-8">
+                    <h3 class="text-xl font-semibold">Science Research Analyst</h3>
+                    <p class="text-[#556B2F]">Bureau of Soils and Water Management (BSWM)</p>
+                    <ul class="mt-4 list-disc pl-5 space-y-2 text-[#4A3728]/90">
+                        <li>Technical support for Adaptive Balance Fertilization Strategy (ABFS) – High Value Crops</li>
+                        <li>Conducted data gathering and interpretation for soil research projects</li>
+                        <li>Prepared periodic status, progress, and accomplishment reports</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-56 text-sm font-medium text-[#8B4513]">Sep 2022 – Dec 2023</div>
+                <div class="flex-1 vintage-card p-8">
+                    <h3 class="text-xl font-semibold">Science Research Assistant</h3>
+                    <p class="text-[#556B2F]">Visayas State University (VSU) – Main Campus</p>
+                    <ul class="mt-4 list-disc pl-5 space-y-2 text-[#4A3728]/90">
+                        <li>Characterized soil profiles and conducted full laboratory soil analysis</li>
+                        <li>Generated Soil Health Cards for farmers and stakeholders</li>
+                        <li>Assisted in extension training activities and technology demonstrations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="bg-[#EDE4D4] py-20 soil-texture fade-in">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-header heading-font text-5xl font-bold mb-12 text-center">Education &amp; Certifications</h2>
+            <div class="max-w-2xl mx-auto space-y-10">
+                <div class="vintage-card p-8">
+                    <h3 class="text-2xl font-semibold">Visayas State University – Baybay City, Leyte</h3>
+                    <p class="text-[#556B2F]">2018 – 2022</p>
+                    <p class="mt-2">Bachelor of Science in Agriculture<br><strong>Major in Soil Science • Cum Laude</strong></p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6 text-sm">
+                    <div class="vintage-card p-6">
+                        <p class="font-medium">Lim-ao Senior High School</p>
+                        <p class="text-[#556B2F]">2016 – 2018</p>
+                        <p class="text-xs mt-2">NC I Agricultural Crops Production<br>NC II Horticulture</p>
+                    </div>
+                    <div class="vintage-card p-6">
+                        <p class="font-medium">Lim-ao National High School</p>
+                        <p class="text-[#556B2F]">2012 – 2016</p>
+                    </div>
+                    <div class="vintage-card p-6">
+                        <p class="font-medium">Lim-ao Elementary School</p>
+                        <p class="text-[#556B2F]">2006 – 2012</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-[#4A3728] text-[#F5EDE3] py-20 fade-in">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+            <div>
+                <h2 class="heading-font text-5xl font-bold mb-6">Let’s talk soil</h2>
+                <p class="mb-8">Whether it’s a soil health assessment, research collaboration, or sustainable farming project, I’d be happy to connect.</p>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-phone text-2xl w-8"></i>
+                        <a href="tel:09126332817" class="text-[#D2B48C]">0912 633 2817</a>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-envelope text-2xl w-8"></i>
+                        <a href="mailto:winceneywart@gmail.com" class="text-[#D2B48C]">winceneywart@gmail.com</a>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-map-marker-alt text-2xl w-8"></i>
+                        <p class="text-[#D2B48C]">Brgy. Lim-ao, Kananga, Leyte, Philippines</p>
+                    </div>
+                </div>
+            </div>
+            
+            <form id="contact-form" class="space-y-6" onsubmit="handleSubmit(event)">
+                <div class="grid grid-cols-2 gap-6">
+                    <input type="text" placeholder="Your name" required class="bg-transparent border border-[#D2B48C] px-6 py-4 text-white">
+                    <input type="email" placeholder="Your email" required class="bg-transparent border border-[#D2B48C] px-6 py-4 text-white">
+                </div>
+                <input type="text" placeholder="Subject" required class="w-full bg-transparent border border-[#D2B48C] px-6 py-4 text-white">
+                <textarea placeholder="Tell me about your project..." rows="6" required class="w-full bg-transparent border border-[#D2B48C] px-6 py-4 text-white"></textarea>
+                <button type="submit" class="modern-vintage-button w-full bg-[#D2B48C] text-[#8B4513] uppercase font-medium py-5 flex items-center justify-center gap-3">SEND MESSAGE <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-[#2C211A] text-[#D2B48C] py-10 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p>© 2026 Winceny Ewart U. Ledesma • Agriculturist &amp; Soil Science Specialist</p>
+            
+            <div class="flex gap-8 text-2xl">
+                <a href="https://www.linkedin.com/in/winceny-ewart-ledesma-61b78b175?utm_source=share_via&utm_content=profile&utm_medium=member_android" 
+                   target="_blank" rel="noopener noreferrer" class="hover:text-[#F5EDE3]" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/wincenyewart.ledesma" 
+                   target="_blank" rel="noopener noreferrer" class="hover:text-[#F5EDE3]" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            
+            <p class="text-center md:text-right uppercase tracking-widest">Restoring soil vitality with science</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        }
+        
+        function setActive(link) {
+            document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        }
+        
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert("🌱 Message received! Thank you – I will reply shortly.");
+            e.target.reset();
+        }
+        
+        function downloadResume() {
+            alert("📄 CV download started!");
+        }
+        
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function initAnimations() {
+            const elements = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.15 });
+            
+            elements.forEach(el => observer.observe(el));
+            
+            const backBtn = document.getElementById('back-to-top');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 600) {
+                    backBtn.classList.remove('hidden');
+                } else {
+                    backBtn.classList.add('hidden');
+                }
+            });
+        }
+        
+        window.onload = () => {
+            initAnimations();
+        };
+    </script>
+</body>
+</html>
