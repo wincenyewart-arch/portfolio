@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Judelyn Lazo | Food Technology & QA Specialist</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0a0f1c;
+    color: #e5f3ff;
+    overflow-x: hidden;
+}
+
+/* Background tech particles */
+body::before {
+    content: "";
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    background-image: radial-gradient(#00f0ff22 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: moveBg 20s linear infinite;
+    z-index: -1;
+}
+
+@keyframes moveBg {
+    0% { transform: translate(0,0); }
+    100% { transform: translate(-200px,-200px); }
+}
+
+/* Glow */
+.glow {
+    box-shadow: 0 0 15px #00f0ff, 0 0 30px #00f0ff33;
+}
+
+/* Card */
+.card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(0,255,255,0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00f0ff55;
+}
+
+/* Heading */
+.heading {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Hero */
+.hero {
+    background: radial-gradient(circle at 20% 20%, #00f0ff22, transparent 60%),
+                radial-gradient(circle at 80% 80%, #00ff9d22, transparent 60%),
+                #0a0f1c;
+}
+
+/* Fade animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.8s;
+}
+
+/* Rotating ring */
+@keyframes spinSlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+    animation: spinSlow 12s linear infinite;
+}
+
+/* Tech line */
+.tech-line {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00f0ff, transparent);
+    animation: pulseLine 3s infinite;
+}
+@keyframes pulseLine {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="fixed w-full bg-black/70 backdrop-blur-md z-50">
+<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="heading text-xl text-cyan-400">JUDELYN LAZO</h1>
+    <div class="hidden md:flex gap-6 text-sm">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero min-h-screen flex items-center">
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+<div>
+    <h1 class="heading text-5xl text-cyan-400 mb-4">Judelyn Lazo</h1>
+    <h2 class="text-2xl mb-4">Food Technology & QA Specialist</h2>
+
+    <p class="text-gray-300 mb-6">
+    Food Technology graduate specializing in <span class="text-cyan-400">quality assurance, food safety, and process control</span>. 
+    Experienced in detecting product non-conformities, conducting inspections, and ensuring compliance with industry standards. 
+    Committed to improving food safety systems and production efficiency through science and precision.
+    </p>
+
+    <div class="flex gap-4">
+        <a href="#contact" class="px-6 py-3 bg-cyan-400 text-black font-semibold glow">Contact Me</a>
+        <a href="./Judelyn_Lazo_CV.pdf" download class="px-6 py-3 border border-cyan-400 hover:bg-cyan-400 hover:text-black transition">
+        Download CV
+        </a>
+    </div>
+
+    <div class="tech-line w-full mt-10"></div>
+</div>
+
+<!-- PROFILE -->
+<div class="flex justify-center">
+    <div class="relative">
+        <div class="absolute inset-0 rounded-full blur-2xl opacity-40 bg-cyan-400 animate-pulse"></div>
+        <div class="absolute inset-0 rounded-full border-2 border-cyan-400 animate-spin-slow"></div>
+
+        <img src="./Profile.png"
+             alt="Judelyn Lazo"
+             class="w-64 h-64 object-cover rounded-full border-4 border-cyan-400 glow relative z-10">
+    </div>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 max-w-6xl mx-auto px-6 fade-in">
+<h2 class="heading text-3xl text-cyan-400 mb-6">About Me</h2>
+<p class="text-gray-300 leading-relaxed">
+Detail-oriented Food Technology graduate with hands-on experience in quality assurance,
+inspection, and reporting. Skilled in identifying contamination, product defects, and
+process deviations. Strong background in documentation, compliance, and maintaining
+high standards in food production environments.
+</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-20 bg-black/40 fade-in">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="heading text-3xl text-cyan-400 mb-10 text-center">Skills</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="card p-6">
+<h3 class="text-xl mb-4 text-cyan-300">Food Technology & QA</h3>
+<ul class="space-y-2 text-sm text-gray-300">
+<li>Quality Assurance & Control</li>
+<li>Food Safety Compliance</li>
+<li>Inspection & Testing</li>
+<li>Internal Audits</li>
+<li>Documentation & SOPs</li>
+</ul>
+</div>
+
+<div class="card p-6">
+<h3 class="text-xl mb-4 text-cyan-300">Data & Operations</h3>
+<ul class="space-y-2 text-sm text-gray-300">
+<li>Data Entry & Reporting</li>
+<li>Inventory Monitoring</li>
+<li>Process Tracking</li>
+<li>Record Management</li>
+<li>Operational Support</li>
+</ul>
+</div>
+
+<div class="card p-6">
+<h3 class="text-xl mb-4 text-cyan-300">Tools & Soft Skills</h3>
+<ul class="space-y-2 text-sm text-gray-300">
+<li>MS Excel & Google Sheets</li>
+<li>Communication</li>
+<li>Critical Thinking</li>
+<li>Attention to Detail</li>
+<li>Team Collaboration</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-20 max-w-6xl mx-auto px-6 fade-in">
+<h2 class="heading text-3xl text-cyan-400 mb-10">Projects & Field Experience</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="card p-6">
+<h3 class="text-xl text-cyan-300 mb-2">Chicken Quality Inspection</h3>
+<p class="text-gray-300 text-sm">
+Identified ammonia burn, hematoma, and contamination issues. Ensured proper classification
+and compliance with food safety standards.
+</p>
+</div>
+
+<div class="card p-6">
+<h3 class="text-xl text-cyan-300 mb-2">Gizzard Contamination Analysis</h3>
+<p class="text-gray-300 text-sm">
+Detected foreign materials such as stones and metals. Provided documentation and
+recommendations to improve processing quality.
+</p>
+</div>
+
+<div class="card p-6">
+<h3 class="text-xl text-cyan-300 mb-2">QA Documentation</h3>
+<p class="text-gray-300 text-sm">
+Prepared reports, tracked non-conformities, and ensured audit readiness through proper documentation.
+</p>
+</div>
+
+<div class="card p-6">
+<h3 class="text-xl text-cyan-300 mb-2">Accounting Support</h3>
+<p class="text-gray-300 text-sm">
+Handled financial records, petty cash, and reporting with accuracy and efficiency.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-20 max-w-6xl mx-auto px-6 fade-in">
+<h2 class="heading text-3xl text-cyan-400 mb-10">Experience</h2>
+
+<div class="card p-6">
+<h3 class="text-xl">Accounting Clerk Assistant & QA/QC</h3>
+<p class="text-cyan-300 text-sm mb-2">2018 – Present | Kananga, Philippines</p>
+<ul class="text-gray-300 text-sm space-y-2">
+<li>Maintained financial records and processed transactions</li>
+<li>Conducted inspections and identified product defects</li>
+<li>Prepared QA reports and tracked non-conformities</li>
+<li>Ensured compliance with quality standards</li>
+</ul>
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="py-20 bg-black/40 fade-in">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="heading text-3xl text-cyan-400 mb-10">Education</h2>
+
+<div class="card p-6">
+<h3 class="text-xl">Bachelor of Science in Food Technology</h3>
+<p class="text-cyan-300 text-sm">Visayas State University</p>
+<p class="text-gray-400 text-sm">2019 – 2025</p>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 max-w-6xl mx-auto px-6 fade-in">
+<h2 class="heading text-3xl text-cyan-400 mb-6">Contact</h2>
+
+<div class="space-y-4 text-gray-300">
+<p><i class="fas fa-phone mr-2"></i> 0967 916 7326</p>
+<p><i class="fas fa-envelope mr-2"></i> judelynlazo157@gmail.com</p>
+<p><i class="fas fa-map-marker-alt mr-2"></i> Kananga, Leyte, Philippines</p>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 text-gray-500 text-sm">
+© 2026 Judelyn Lazo | Food Technology Portfolio
+</footer>
+
+<script>
+const elements = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('visible');
+        }
+    });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
